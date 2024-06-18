@@ -1,4 +1,16 @@
 #!/bin/bash
+check_command () {
+  if ! command -v $1 &> /dev/null
+  then
+      echo "Please install $1"
+      exit 1
+  fi
+}
+
+check_command g++
+check_command sage
+check_command csdp
+
 PROBLEM_FILE="problem.txt"
 
 if [ ! -f flag ]; then
