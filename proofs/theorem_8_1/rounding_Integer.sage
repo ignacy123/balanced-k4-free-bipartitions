@@ -611,7 +611,7 @@ def testMatrices(problem, solutionMatrices,scale,test_from=0,test_to=10000000,us
                 min = c
                 min_i = i
             min_real = float(float(min)/(roundingDenominator^3))
-    print("Formal lower bound on (1 - obj. function) found at",min_i,"/",loaded_constraints,"and it is",float(min_real/scale))
+    print("Formal lower bound on (-1 - obj. function) found at",min_i,"/",loaded_constraints,"and it is",float(min_real/scale))
     return min
 
 
@@ -724,7 +724,7 @@ def test_rounding(file, scale, sdp_scaled=True, test_from=0, test_to=10000000):
     r = testMatrices(problem, roundedMatrices,scale)
 
     denom = scale*(roundingDenominator^3)
-    print("Final upper bound on objective function is", denom - r,'/',denom,"# = ", float(denom - r)/float(denom))
+    print("Final upper bound on objective function is", -r - denom,'/',denom,"# = ", float(-r - denom)/float(denom))
     return scale*(roundingDenominator^3)
 
 

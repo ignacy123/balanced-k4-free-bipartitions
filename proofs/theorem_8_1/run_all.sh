@@ -8,15 +8,13 @@ fi
 cat objective.txt > $PROBLEM_FILE
 echo "1 1 0" >> $PROBLEM_FILE
 
-add_assumption () {
-  echo "
-# assumption $1 from paper
-0 0 " >> $PROBLEM_FILE
-  cat "assump_$1.txt" >> $PROBLEM_FILE
-}
-
-add_assumption "20"
-add_assumption "22"
-add_assumption "24"
+echo "" >> $PROBLEM_FILE
+cat "assump_20.txt" >> $PROBLEM_FILE
+echo "" >> $PROBLEM_FILE
+cat "assump_22.txt" >> $PROBLEM_FILE
+echo "" >> $PROBLEM_FILE
+cat "assump_24.txt" >> $PROBLEM_FILE
 
 ./flag -n 7 -ub -fp -obj $PROBLEM_FILE
+
+sage round.sage
