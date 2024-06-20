@@ -1,4 +1,4 @@
-# we will multiply this during rounding, so loss of precision is fine at this point
+# we will multiply this when rounding, so the loss of precision is fine at this point
 0.088888888888889 5 0  1 1 1 1  1 1 1  1 1  2   
 0.177777777777778 5 0  1 1 1 1  1 1 1  1 2  2   
 0.266666666666667 5 0  1 1 1 1  1 1 2  1 2  2   

@@ -19,7 +19,7 @@ where 1 denotes no edge, and 2 denotes an edge.
 
 # Assumptions
 Input assumptions from the paper are in the `assump_X.txt` files, and the objective function is in `objective.txt`.
-They are written in the form of vectors, (we have performed flag multiplication beforehand).
+They are written in the form of vectors (we have performed flag multiplication beforehand).
 We multiplied some of them by positive constants greater than 1 to ensure the underlying SDP consists of integers.
 
 # Usage

@@ -1,4 +1,4 @@
-# assumption 24 from paper
+# assumption (24) from the paper
 # multiplied by 5670
 # this multiplication does not matter, as RHS is 0
 0 0
